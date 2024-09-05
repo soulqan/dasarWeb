@@ -20,6 +20,7 @@ h2{
 }
 
 body{
-    background: lightcyan;
+    background: url('img/tree1.png'), url('img/field.jpeg');
+    background-repeat: no-repeat,repeat;
     color: white;
 }
