@@ -8,11 +8,34 @@ body{
     line-height: 1.65;
     padding-bottom: 1000px;
 }
-.container-satu{
-    width: 800px;
+.container-satu {
+    width: 1200px; 
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     display: flex;
+}
+
+
+.sidebar-satu {
+    width: 20%; 
+    background-color: #B063D8;
+    padding: 20px;
+    box-sizing: border-box;
+    order: 1;
+}
+.kolom-utama {
+    width: 60%; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    order: 2;
+}
+.sidebar-dua {
+    width: 20%; 
+    background-color: #E45765;
+    padding: 20px;
+    box-sizing: border-box;
+    order: 3;
 }
