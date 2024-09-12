@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="return validateForm()">
+        <div class="nama">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" value=""><br><br>
+        </div>
+
+        <div class="Alamat">
+            <label for="Alamat">Alamat:</label>
+            <textarea name="message" rows="10" cols="30"></textarea><br><br>
+            <label for="Tanggal_Lahir">Tanggal Lahir:</label>
+            <input type="date" id="Tanggal_Lahir" name="Tanggal_Lahir" value=""><br><br>
+        </div>
+
+        <div class="Jenis_Kelamin">
+            <label for="Jenis_Kelamin">Jenis Kelamin:</label>
+            <input type="checkbox" id="Laki-laki" name="Laki-laki" value="Laki-laki">
+            <label for="Laki-laki">Laki-laki</label>
+            <input type="checkbox" id="Wanita" name="Wanita" value="Wanita">
+            <label for="Wanita">Wanita</label><br><br>
+        </div>
+
+        <div class="Hobby">
+            <label for="Hobby">Hobby:</label>
+            <input type="checkbox" id="Berenang" name="Berenang" value="Berenang">
+            <label for="Berenang">Berenang</label>
+            <input type="checkbox" id="Berlari" name="Berlari" value="Berlari">
+            <label for="Berlari">Berlari</label>
+            <input type="checkbox" id="Lain-lain" name="Lain-lain" value="Lain-lain">
+            <label for="Lain-lain">Lain-lain</label><br><br>
+        </div>
+
+        <div class="Pekerjaan">
+            <label for="Pekerjaan">Pekerjaan:</label>
+            <input type="checkbox" id="Swasta" name="Swasta" value="Swasta">
+            <label for="Swasta">Swasta</label>
+            <input type="checkbox" id="PNS" name="PNS" value="PNS">
+            <label for="PNS">PNS</label>
+            <input type="checkbox" id="Lain-lain" name="Lain-lain" value="Lain-lain">
+            <label for="Lain-lain">Lain-lain</label><br><br>
+        </div>
+        
+        <div class="check">
+            <input type="checkbox" id="check" name="check" value="check">
+            <label for="check">Check Jika anda akan mengirimkan data ini</label>
+        </div>
+        
+        <input type="submit" value="cek!">
+    </form>
+
+    <script>
+        function validateForm() {
+            var nama = document.getElementById("nama").value;
+            var alamat = document.getElementsByName("message")[0].value;
+            var tanggalLahir = document.getElementById("Tanggal_Lahir").value;
+            var lakiLaki = document.getElementById("Laki-laki").checked;
+            var wanita = document.getElementById("Wanita").checked;
+            var hobbyBerenang = document.getElementById("Berenang").checked;
+            var hobbyBerlari = document.getElementById("Berlari").checked;
+            var hobbyLain = document.getElementById("Lain-lain").checked;
+            var pekerjaanSwasta = document.getElementById("Swasta").checked;
+            var pekerjaanPNS = document.getElementById("PNS").checked;
+            var pekerjaanLain = document.getElementById("Lain-lain").checked;
+            var check = document.getElementById("check").checked;
+
+            if (nama == "") {
+                alert("Nama harus diisi");
+                return false;
+            }
+
+            if (alamat == "") {
+                alert("Alamat harus diisi");
+                return false;
+            }
+
+            if (tanggalLahir == "") {
+                alert("Tanggal Lahir harus diisi");
+                return false;
+            }
+
+            if (!lakiLaki && !wanita) {
+                alert("Jenis Kelamin harus dipilih");
+                return false;
+            }
+
+            if (!hobbyBerenang && !hobbyBerlari && !hobbyLain) {
+                alert("Minimal satu Hobby harus dipilih");
+                return false;
+            }
+
+            if (!pekerjaanSwasta && !pekerjaanPNS && !pekerjaanLain) {
+                alert("Minimal satu Pekerjaan harus dipilih");
+                return false;
+            }
+
+            if (!check) {
+                alert("Harap centang kotak konfirmasi sebelum mengirimkan data");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+
+</html>
