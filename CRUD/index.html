@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-satu">
+        <div class="deskripsi">
+            <h2>Penyimpanan Barang</h2>
+            <p>Sistem penyimpanan Barang untuk menambah, membaca, mengubah, dan menghapus informasi.</p>
+        </div>
+        <div class="menu-container">
+            <div class="menu-create">
+                <h3>Masukkan Data</h3>
+                <p>Masukkan data baru ke dalam sistem.</p>
+                <form action="input.php" method="POST">
+                    <input type="submit" name="create" value="Masukkan Data">
+                </form>
+            </div>
+            <div class="menu-read">
+                <h3>Edit Data</h3>
+                <p>Melihat, Mengupdate, dan Menghapus data yang tersimpan di sistem.</p>
+                <form action="read_data.php" method="GET">
+                    <input type="submit" name="read" value="Lihat Data">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

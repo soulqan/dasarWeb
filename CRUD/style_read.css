@@ -1,0 +1,72 @@
+/* Gaya dasar untuk body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc; /* Warna latar belakang lembut */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Gaya untuk judul */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%; /* Tabel memenuhi lebar penuh */
+    border-collapse: collapse; /* Menggabungkan border */
+    margin: 0 auto; /* Menyelaraskan tabel di tengah */
+    background-color: #fff; /* Latar belakang tabel */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk tabel */
+}
+
+/* Gaya untuk header tabel */
+th {
+    background-color: #007bff; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 12px; /* Padding untuk sel header */
+    text-align: left; /* Rata kiri untuk teks */
+}
+
+/* Gaya untuk sel tabel */
+td {
+    padding: 12px; /* Padding untuk sel */
+    border-bottom: 1px solid #ddd; /* Garis bawah untuk sel */
+    color: #333; /* Warna teks sel */
+}
+
+/* Gaya untuk sel saat hover */
+tr:hover td {
+    background-color: #f1f1f1; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk tautan dalam tabel */
+a {
+    color: #007bff; /* Warna tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Gaya untuk tombol kembali ke beranda */
+button {
+    padding: 10px 15px;
+    background-color: #6c757d; /* Warna latar belakang tombol kembali */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display: block; /* Memastikan tombol tampil sebagai blok */
+    margin: 20px auto; /* Margin atas dan bawah, tengah secara horizontal */
+}
+
+/* Gaya hover untuk tombol kembali */
+button:hover {
+    background-color: #5a6268; /* Warna latar belakang tombol kembali saat hover */
+}
