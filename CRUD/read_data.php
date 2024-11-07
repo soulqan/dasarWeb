@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 $serverName = "localhost";
 $connectionOptions = [
     "Database" => "Web_DB",
@@ -14,7 +11,6 @@ if ($conn === false) {
     die(print_r(sqlsrv_errors(), true));
 }
 
-// Query untuk membaca data dari tabel
 $sql = "SELECT * FROM dbo.dataMasuk";
 $stmt = sqlsrv_query($conn, $sql);
 
@@ -55,7 +51,6 @@ if ($stmt === false) {
         <?php endwhile; ?>
     </table>
 
-    <!-- Tambahkan tombol untuk kembali ke beranda -->
     <br>
     <a href="index.html">
         <button type="button">Kembali ke Beranda</button>

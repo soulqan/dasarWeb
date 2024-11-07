@@ -1,4 +1,3 @@
-/* Gaya dasar untuk body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
@@ -10,7 +9,6 @@ body {
     height: 100vh;
 }
 
-/* Container utama */
 .container-satu {
     max-width: 1000px;
     background-color: #ffffff;
@@ -20,7 +18,6 @@ body {
     text-align: center;
 }
 
-/* Gaya untuk deskripsi */
 .deskripsi {
     text-align: center;
     margin-bottom: 20px;
@@ -31,7 +28,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Flexbox untuk menu horizontal */
 .menu-container {
     display: flex;
     justify-content: space-between;
@@ -39,7 +35,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* Gaya untuk setiap kotak menu */
+
 .menu-create, .menu-read {
     flex: 1 1 200px;
     padding: 20px;
@@ -49,19 +45,17 @@ body {
     text-align: center;
 }
 
-/* Gaya judul setiap menu */
-.menu-create h3, .menu-read h3, .menu-update h3, .menu-delete h3 {
+.menu-create h3, .menu-read h3{
     color: #333;
     margin-bottom: 10px;
 }
 
-/* Gaya paragraf di menu */
+
 .container-satu p {
     color: #555;
     line-height: 1.6;
 }
 
-/* Gaya tombol */
 .container-satu input[type="submit"] {
     padding: 10px 20px;
     color: #ffffff;
@@ -73,12 +67,9 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Gaya hover untuk tombol */
 .container-satu input[type="submit"]:hover {
     background-color: #45a049;
 }
-
-/* Warna khusus untuk kotak menu */
 .menu-create {
     border-top: 4px solid #4CAF50;
 }
